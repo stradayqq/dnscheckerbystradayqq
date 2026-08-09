@@ -1,3 +1,5 @@
+from fileinput import close
+
 import dns.resolver
 from ipwhois import IPWhois
 
@@ -36,5 +38,9 @@ def print_whois(ip):
         print(f"    whois for {ip}: Error ({e})")
 
 if __name__ == "__main__":
-    target_domain = "freehost.com.ua"
+    target_domain = input("Enter the domain to check: ")    
     check_dns_records(target_domain)
+    answer = input("put your domain: ")
+    check_dns_records(answer)
+close
+ 
