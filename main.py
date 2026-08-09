@@ -1,13 +1,12 @@
-from fileinput import close
-
 import dns.resolver
 from ipwhois import IPWhois
 
+
 def check_dns_records(domain):
     record_types = ['A', 'AAAA', 'MX', 'TXT', 'NS']
-    
+
     print(f"Results of DNS check for domain: {domain}\n")
-    
+
     for rtype in record_types:
         try:
             answers = dns.resolver.resolve(domain, rtype)
@@ -25,6 +24,7 @@ def check_dns_records(domain):
             print(f"[{rtype} records]: Error ({e})")
         print("-" * 30)
 
+
 def print_whois(ip):
     try:
         obj = IPWhois(ip)
@@ -37,6 +37,11 @@ def print_whois(ip):
     except Exception as e:
         print(f"    whois for {ip}: Error ({e})")
 
-if __name__ == "__main__":
-    target_domain = input("Enter the domain to check: ")    
+
+def main():
+    target_domain = input("Enter the domain to check: ")
     check_dns_records(target_domain)
+
+
+if __name__ == "__main__":
+    main()
