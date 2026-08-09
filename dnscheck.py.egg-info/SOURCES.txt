@@ -1,0 +1,8 @@
+dnscheck.py
+pyproject.toml
+dnscheck.py.egg-info/PKG-INFO
+dnscheck.py.egg-info/SOURCES.txt
+dnscheck.py.egg-info/dependency_links.txt
+dnscheck.py.egg-info/entry_points.txt
+dnscheck.py.egg-info/requires.txt
+dnscheck.py.egg-info/top_level.txt
