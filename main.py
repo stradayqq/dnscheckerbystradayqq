@@ -40,7 +40,3 @@ def print_whois(ip):
 if __name__ == "__main__":
     target_domain = input("Enter the domain to check: ")    
     check_dns_records(target_domain)
-    answer = input("put your domain: ")
-    check_dns_records(answer)
-close
- 
