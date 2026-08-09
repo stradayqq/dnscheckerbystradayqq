@@ -1,0 +1,14 @@
+[project]
+name = "dnscheck.py"
+version = "1.0"
+dependencies = [
+    "dnspython",
+    "ipwhois",
+]
+
+[project.scripts]
+dnscheck = "dnscheck:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
