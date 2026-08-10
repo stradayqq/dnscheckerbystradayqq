@@ -13,7 +13,7 @@ sudo apt install pipx
 
 Clone the repository and install:
 ```bash
-git clone <repo-url>
+git clone https://github.com/stradayqq/dnscheckerbystradayqq/edit/main/README.md)
 cd dnschecherbystradayqq
 pipx install .
 ```
